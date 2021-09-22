@@ -1,6 +1,6 @@
 import { createStore, applyMiddleware, compose } from "redux";
 import promiseMiddleware from "redux-promise";
-import appReducers from "./reducers";
+import appReducers from "./reducers/index";
 
 const ReduxStore = function () {
   const composeEnhancers =
