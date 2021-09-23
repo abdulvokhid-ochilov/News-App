@@ -99,6 +99,10 @@ nav {
   margin: 0 auto;
 }
 
+.newsletter_container button {
+  margin-top: 10px;
+}
+
 /*////////////////////////////////////
             ARTICLE
 /////////////////////////////////////*/

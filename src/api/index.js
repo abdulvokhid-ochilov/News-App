@@ -23,3 +23,27 @@ export const getPosts = async (
     throw error;
   }
 };
+
+export const addNewsLetter = async function (data) {
+  try {
+    const user = await axios.get(`${URL_SRV}/newsletter?email=${data.email}`);
+
+    if (!Array.isArray(user.data) || !user.data.length) {
+      const response = await axios({
+        method: "POST",
+        url: `${URL_SRV}/newsletter`,
+        data: {
+          email: data.email,
+        },
+      });
+      return {
+        newsletter: "added",
+        email: response.data,
+      };
+    } else {
+      return { newsletter: "failed" };
+    }
+  } catch (error) {
+    throw error;
+  }
+};

@@ -201,6 +201,19 @@
       "createdAt": "2020-07-22T12:59-0500"
     }
   ],
-  "newsletter": [],
+  "newsletter": [
+    {
+      "email": "ochilov2050@gmail.com",
+      "id": 1
+    },
+    {
+      "email": "mr.ochilov1997@gmail.com",
+      "id": 2
+    },
+    {
+      "email": "pythont.test32@gmail.com",
+      "id": 3
+    }
+  ],
   "contact": []
 }
