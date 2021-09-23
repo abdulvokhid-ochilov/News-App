@@ -47,3 +47,13 @@ export const addNewsLetter = async function (data) {
     throw error;
   }
 };
+
+export const getPostById = async function (id) {
+  try {
+    const response = await axios.get(`${URL_SRV}/posts/${id}`);
+
+    return response.data;
+  } catch (error) {
+    return "404";
+  }
+};
